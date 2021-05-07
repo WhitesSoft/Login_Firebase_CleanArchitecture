@@ -1,4 +1,4 @@
-package com.example.kotlin_login_firebase
+package com.darksoft.kotlin_login_firebase
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

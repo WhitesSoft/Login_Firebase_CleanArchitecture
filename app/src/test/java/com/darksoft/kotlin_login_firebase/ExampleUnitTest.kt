@@ -1,4 +1,4 @@
-package com.example.kotlin_login_firebase
+package com.darksoft.kotlin_login_firebase
 
 import org.junit.Test
 
