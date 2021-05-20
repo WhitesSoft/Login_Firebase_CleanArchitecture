@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.login.view.MainActivity"
+    tools:context=".presentation.login.view.LoginActivity"
     android:background="@color/fondo">
 
     <TextView
@@ -70,9 +70,21 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_iniciar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
     <Button
-        android:id="@+id/btn_iniciarSesion"
+        android:id="@+id/btn_Correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Iniciar Sesión"
@@ -96,7 +108,7 @@
         android:layout_marginRight="8dp"
 
         app:layout_constraintVertical_bias="0.2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_iniciarSesion"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Correo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/o"
         app:layout_constraintBottom_toBottomOf="parent"/>
@@ -115,7 +127,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linea1"
         app:layout_constraintEnd_toStartOf="@+id/linea2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_iniciarSesion" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Correo" />
 
     <View
         android:id="@+id/linea2"
@@ -126,7 +138,7 @@
         android:layout_marginRight="8dp"
 
         app:layout_constraintVertical_bias="0.2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_iniciarSesion"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Correo"
         app:layout_constraintStart_toEndOf="@+id/o"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

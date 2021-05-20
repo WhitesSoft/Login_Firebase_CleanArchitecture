@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Personalizado">
         <activity android:name=".presentation.login.view.Inicio"></activity>
-        <activity android:name=".presentation.login.view.MainActivity">
+        <activity android:name=".presentation.login.view.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

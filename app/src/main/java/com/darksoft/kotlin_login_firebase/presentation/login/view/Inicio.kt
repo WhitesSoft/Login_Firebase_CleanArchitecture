@@ -10,6 +10,6 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
-        Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
+
     }
 }
