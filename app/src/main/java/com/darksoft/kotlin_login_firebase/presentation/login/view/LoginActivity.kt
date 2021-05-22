@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.darksoft.kotlin_login_firebase.R
 import com.darksoft.kotlin_login_firebase.base.BaseActivity
+import com.darksoft.kotlin_login_firebase.domain.interactor.loginInteractor.SignInInteractor
 import com.darksoft.kotlin_login_firebase.presentation.login.LoginContrato
 import com.darksoft.kotlin_login_firebase.presentation.login.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_login.*
@@ -19,7 +20,7 @@ class LoginActivity : BaseActivity(), LoginContrato.LoginView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        presenter = LoginPresenter()
+        presenter = LoginPresenter(SignInInteractor())
         presenter.attachView(this) //Le mandamos la vista al LoginPresenter
 
         btn_google.setOnClickListener {

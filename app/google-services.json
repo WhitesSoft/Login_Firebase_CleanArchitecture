@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1079540131129",
+    "project_id": "cleanarquitectura",
+    "storage_bucket": "cleanarquitectura.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079540131129:android:45e8c758a824c1974474e8",
+        "android_client_info": {
+          "package_name": "com.darksoft.kotlin_login_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079540131129-qkd2rvlqt5bjlo66nhnvm4rk3tvnjccn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzSZU9BqsgiJvcWKufrD0b6rl4yzgqiaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079540131129-qkd2rvlqt5bjlo66nhnvm4rk3tvnjccn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
