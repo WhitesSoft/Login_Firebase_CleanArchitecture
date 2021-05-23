@@ -1,4 +1,4 @@
-package com.darksoft.kotlin_login_firebase.presentation.login.view
+package com.darksoft.kotlin_login_firebase.presentation.main.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

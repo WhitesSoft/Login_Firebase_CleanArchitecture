@@ -28,16 +28,17 @@ class LoginPresenter(signIn: SignIn): LoginContrato.LoginPresenter {
 
     override fun signInUserCorreo(email:String, password:String) {
         vista?.showProgressBar()
-        vista?.showError("Entraste")
         signIn?.SignInCorreo(email, password, object: SignIn.SignInCallBack{
 
+            //Si logeo correctamente vamos a la nueva activity
             override fun onSignInSucces() {
                 if(isViewAttached()){
                     vista?.showHideProgressBar()
                     vista?.navigateToMain()
+
                 }
             }
-
+            //Si no logeo correctamente le mostramos el error
             override fun onSignInFailure(mensajeError: String) {
                 if(isViewAttached()){
                     vista?.showHideProgressBar()

@@ -9,6 +9,7 @@ import com.darksoft.kotlin_login_firebase.base.BaseActivity
 import com.darksoft.kotlin_login_firebase.domain.interactor.loginInteractor.SignInInteractor
 import com.darksoft.kotlin_login_firebase.presentation.login.LoginContrato
 import com.darksoft.kotlin_login_firebase.presentation.login.presenter.LoginPresenter
+import com.darksoft.kotlin_login_firebase.presentation.main.view.Inicio
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -82,7 +83,7 @@ class LoginActivity : BaseActivity(), LoginContrato.LoginView {
     }
 
     override fun navigateToMain() {
-        TODO("Not yet implemented")
+        startActivity(Intent(this, Inicio::class.java))
     }
 
     override fun navigateToRegister() {
